@@ -1,0 +1,91 @@
+
+
+
+Happy or Sad:
+ My dataset consists of 80 images among them 40 are happy 
+    and 40 are sad. I'd considered Deep Convolutional Neural networks for training the model and used callbacks to avoid overfitting. One of 
+    the impressive thing I'd used was Image Augmentation because of having very limited amount of data. This technique take the images and
+    perform crop, sheer, reflect x and y axis,rescale, and a lot more, and passes to the alogorithm on the go without storing in the memory. 
+ 
+Sarcasm Detection:
+    This project is used to detect the Sarcasm from the user reviews. I'd used neural networks for training the model. Firstly I'd tokenized
+    the entire dataset set and used padding to keep all the sequences length the same. Next used Word Embedding for an n-dimensional vector.
+    By adjusting the parameters i get to achieve 85% accuracy.
+
+IMDB reviews:
+    This project is based on extracting the sentiment from all the reviews from users whether it is positive or negative. Firstly I'd trained
+    with normal Embedding with Dense layer, I ended up with poor accuracy. Next I used word Embedding with Bidirectional LSTM with 2 layerswhich helped 
+    my model to secure an accuracy around 100% on training 90% test set, but yeah it sightly led to overfitting. I either trained it with
+    8k sub-words corpus rather than entire words corpus but the accuracy drove too badly because sub-words will lose the entire meaning of 
+    the sentence. 
+
+BBC archieves:
+    This project is used to categorize the BBC news articles into 6 categories say sports, entertainment, etc. Firstly I'd removed commonly 
+    occuring stopwords which was the noise for the data. Training labels were turned into sequences. Then I had used word Embedding to project 
+    into n-dimensional vector to categorize the similar meaning words and then used softmax activation with output layer of 6 neurons for 
+    categorization. The accuracy was 95%.
+
+TWeets:
+    This project is used to detect positive and negative tweets from the twitter users. The dataset used is from kaggle.
+
+Irysh song generation:
+    This project is based on to generate an Irysh poetry or song. I'd used around 1980 lines of Irysh songs dataset. First tokenized the 
+    entire dataset and converted into sequences and added padding to the data. I'd used Bidirectional LSTM for training the model because
+    it consists of memory cell states which are really helpful for generating the new lines. I'd used Adam optimizer with my own learning 
+    rate for the best accuracy. The accuracy was 80% with 100 epochs.
+
+Shakespeare poetry
+    The theme of the project is to generate a poetry like Shakespeare's poetry using old english literature. I'd used 2 layer bi-directional
+    LSTM with droupout regularization. Finally I reached an accuracy of 79.87% over 100 epochs. It accuracy will increase if we train it upon
+    500 epochs. I'd used matplot library to plot the graph to visualize the loss and accuracy.
+
+Sunspots-Forcasting:
+    This project is used to predict the sunspots in the future based upon the previous data. The dataset is taken from kaggle. FIrstly I'd 
+    used machine learning technique like mean squared error and mean absolute error. I'd cleaned date using trailing and centered windows 
+    by taking t-365days data to reduce the noise and a lot more. Next I used LSTM, DCNN to train the model, it took a bit long time to train
+    but ended up with good accuracy. I'd used learning Rate Scheduler too which is a bit advantage.
+
+Melbourne-Climate-Temperature:
+    This project is used to predict the future temperature in Melbourne.I'd used CNN along with LSTM to train the model. I'd used lambda 
+    layers in Addition while creating the model architecture. 
+
+Speech Recognition:
+    This project is a Trigger Word detection like Google,Alexa,Siri. I'd developed a speech recognition system in order to activate by speech.
+    The trigger word is "ACTIVATE". I'd used Convolutional layers along with Gradient Recurrent Units to design the model. The accuracy is 
+    not soo good but it hit the mark.
+
+JAZZ Music generation:
+    This project to used to genenrate a new music based upon the large corpus of music data. I'd used LSTM and achieved an accuracy of 90% 
+    for 100 epochs
+
+EMOJIFY:
+    This project is used to geneate emojis based on the text. I'd used pre-trained embedding layers along with LSTM with dropout regularization.
+    I hit an accuracy of 89% for 50 epochs.
+
+ 
+
+Neural Style Transfer:
+    This project is used to take a style image and a content image and club them both.
+
+Autonomous Driving Car Detection:
+    This project is used to detect more than 1 car from the frame. I'd used YOLO-V3 architecture for training the model and used Edge detection
+    techniques. It is used to predict all cars in real time video. The dataset used is coco dataset. I'd used non-max supression technique
+    which is widely used in recogniton models, it's intersection over Union. The accuracy is good because the model was pre trained before.
+
+Machine Translation:
+    I'd used LSTM 
+
+Sepsis PREDICTION:
+
+
+
+Story Telling:
+
+
+
+
+
+
+
+
+ 
