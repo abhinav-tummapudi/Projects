@@ -1,0 +1,12 @@
+mat-card {
+    /* background: green; */
+    height: 80px;
+    transition: all 0.5s;
+  }
+  
+  mat-card.expanded {
+    height: 150px;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0px 5px 10px;
+    /* background: green; */
+  }

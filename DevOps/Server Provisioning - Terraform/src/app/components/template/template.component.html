@@ -1,0 +1,216 @@
+<!-- <div class="container">
+    
+  <div class="card border-primary mb-3">
+    <div class="header">
+      Terraform
+    </div>
+    <div class="card-body">
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-1">
+              <label for="file">Provider:</label>
+            </div>
+            <div class="col-md-2">
+              <select formControlName="file" class="form-select">
+                <option value="" selected disabled> Select Template</option>
+        
+                <option *ngFor="let file of templateFiles">{{file}}</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div> -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <br>
+      <div class="card border-primary mb-4">
+        <div class="card-header">Provider</div>
+        <div class="card-body text-primary">
+          <!-- <h5 class="card-title">Provider</h5> -->
+          <form [formGroup]="form" (ngSubmit)="submit()">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-8">
+                  <select formControlName="file" class="form-select">
+                    <option value="" selected disabled> Select Template</option>
+                    <!-- <option>Choose Website</option> -->
+                    <option *ngFor="let file of templateFiles">{{file}}</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-8" *ngIf="card">
+      <br>
+      <div class="card border-primary mb-4">
+        <div class="card-header">Configure & Create instance</div>
+        <div class="card-body text-primary">
+          <!-- <h5 class="card-title">Provider</h5> -->
+          <form id="myForm" [formGroup]="thisIsMyForm">
+            <div class="form-group">
+              <div [formArrayName]="'formArrayName'">
+                <div *ngFor="let x of data; let i = index" [ngClass]="{expanded: expanded[i]}">
+                  <div [formGroupName]="i">
+                    <br>
+                    <div class="row">
+                      <div class="col">
+                        <label>{{x.heading}}</label> <br>
+                      </div>
+                      <div class="col">
+                        <input formControlName="type" class="form-control input-sm" id="{{x.name}}"
+                          placeholder="{{x.name}}" matInput value="{{x.type}}" />
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-warning" *ngIf="fomrControlState(i)" (click)="toggleEdit(i)">Enable
+                          Edit</button>
+                        <button class="btn btn-success " *ngIf="!fomrControlState(i)"
+                          (click)="toggleEdit(i)">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><br>
+                <button class="btn btn-primary" type="submit" (click)="onSubmit()">Submit Form</button>
+                <button class="btn btn-danger" type="button" (click)="createInstance()" style="float: right" *ngIf="instanceCard">
+                  Create</button>
+                <!-- <button (click)="onSubmit()">Submit Form</button> -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-2" *ngIf="instanceCard">
+      <br>
+      <div class="card border-primary mb-4">
+        <div class="card-header">Create Instance</div>
+        <div class="card-body text-primary">
+          <button class="btn btn-primary" type="button" (click)="createInstance()">
+            Create</button>
+        </div>
+      </div>
+    </div> -->
+
+
+  </div>
+
+  <div class="row">
+
+
+  </div>
+
+
+
+
+  <!-- <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div> -->
+
+
+  <!-- <div class="container">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="file">Provider:</label>
+      <select formControlName="file" class="form-control">
+        <option disabled>Select Template</option>
+        <option *ngFor="let file of templateFiles">{{file}}</option>
+      </select>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div> -->
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <form id="myForm" [formGroup]="thisIsMyForm">
+  <div [formArrayName]="'formArrayName'">
+    <div *ngFor="let x of data; let i = index" [ngClass]="{expanded: expanded[i]}">
+      <div [formGroupName]="i">
+
+        <label>{{x.heading}}</label>
+        <input formControlName="type" id="{{x.name}}" placeholder="{{x.name}}" matInput value="{{x.type}}" />
+
+        <button *ngIf="fomrControlState(i)" (click)="toggleEdit(i)">Enable Edit</button>
+        <button *ngIf="!fomrControlState(i)" (click)="toggleEdit(i)">Save</button>
+      </div>
+    </div>
+    <button (click)="onSubmit()">Submit Form</button>
+  </div>
+</form> -->
+
+
+
+<!-- <button [disabled]="thisIsMyForm.get('formArrayName').enabled" (click)="onSubmit()">Submit Form</button> -->
+
+
+<!-- 
+<div> 
+  <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata)" > 
+      <div *ngFor = "let x of data;let i = index">
+          {{x.label}}
+          
+      <input id="{{x.type}}" type="text"  placeholder="{{x.type}}" formControlName = type />
+      <button *ngIf="!toggleEdit"> Enable Edit </button>
+      <button *ngIf="toggleEdit" > Save </button>  
+      <input type="submit"  value="Click here">         
+      </div>
+      
+     <input type= "text"  name="userName" placeholder="userName" 
+        formControlName = "userName"> 
+     <br/>
+     <br/>
+     <input type="submit"  value="Click here"> 
+  </form>
+</div> 
+<p> Textbox result is: {{userName}} </p>
+
+<div>
+  <div *ngFor="let item of arr; let i = index">
+    <input name="name" [ngModel]="arr[i]">
+  </div>
+</div>
+<button (click)="addNew()">new</button> -->
+
+<!-- <div style="text-align:center">
+  <h1>
+    Create Instance
+  </h1>
+  <button type="button" (click)="createInstance()">
+    Create</button>
+
+</div> -->

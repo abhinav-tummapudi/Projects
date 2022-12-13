@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "starry-descent-318115",
+  "private_key_id": "854ce2ac496dec80f1cda64eca10241e3343cc02",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCb8fAcQaeImwgB\nDsy2xGe6DToC6NmWLH6w4q+zZKj0YJ4qYt8V8Vtv416O+sMkLUahLBuKWehOrz1I\nAl9MR25mYrYLtgkRtY/dNuurHb1XDeaFUjRD20r8B6KY3a2PnNSfqsZF47NNfqOb\nJ7Q4TrBO2XQmjPHRvJmKoKozoT67+xZRKw4CCTMI2/MRweKGn7LbLzmsWMEguixb\n102+qVQ4aHcEKw06VMmmg9SDdOKJ1gxN5VJUHRBWhOY3f1BjYS3th36HhBksLwU8\n0D+6tuDs+3jNB/tAKVTGlyqC9lKaRYpDOtmaH+2QU3M4mKvxQ5KEgnQoJj4RCGjC\nf63R9FhjAgMBAAECggEAAoL1gob+K0GP8fBqlKD6KLFw1z4nzvbdfXzRJpr+65yo\nv3cDL8fI2Lb5PWVFgk4mXo8mzGYhSy8gVgoPvdtCqGx7kRm38KyTahUp24Ipm/7R\n0SDfTZ55CTEYScz8MB1vATlPYy3FJADfoq6ThPqjdUmkSMCpXl7ivCxVQWqd54of\nwjDNdE/ecG7ekckqBXWYKX3YZ1S3vqrUVJ7m3nsek5fA2gTq+/1xThKrD4vIQDaf\nzy8OScU18ORKJkkMqzYAfjjRmjiW4t+wzyjisypKD6c10aojMkb2gMMPKfCFBEYz\ncGS978eFc/cXlXZ/4kbEMHoKcUcvQ3lNunTEwosmtQKBgQDTVBx8SaMWKWgnWvDZ\nGxRf1irc7eDh8xzHE1upR+/5b/vIAVMI7fl8T/ohzkBmfGGS+Qkwv5HsbtkXbf9i\nI7WutXdd00yiWL/UL2z5GkQoDkL9hc1t9QnxMw9+vB0TLE3IfmlnHXMuKNVtDZNi\nxPoA5kWaB6dT4fgwTWixyZisxQKBgQC86MpCYdr0qM5iLAcMbABR6EY8r6TYLCQ/\ndYn0aKjZGCPQale2dy65gbdiYBykzNk+UdxhaQIN7inrBlQp2aQMzrm0hZpF14ny\nooCJMQEJpkO0q0lhaiEEz2wKH+/vkBzvV9/MV7KiLnwSZyZt+NUoiiwi7r6SOZj2\nqpIFS3ETBwKBgFBKsNf4EmKlMNFjGAck5sTS1k5CgyLV/6UTkcvrbR3UklEXT7kg\n0Z2NtXeKqaVGtLvmqrs+ze6K3yirvlBHSQwsHkIjugYkuh2gN0Md269sW79/SuHw\nK+rcf5KjXlieiJ8YiGuJIO30zcI1Wj44oNQeqWswZT7VqDqR7qk98ygRAoGAWSe8\nnUu1nJY2oRqKURB/rihjTazPrb5XdSOx8gma9qpv7KLjtpfVE3Pm6qTVn+mV9dWI\nnuiCMbTfT65y9jVjOTAvcMVFJAUvc7XB1/2qsbUoaxIT1cfSwYRrRvP/tx5aqZLd\naoFRKz2pDL5l4qz3XOSpI+ttQXGxgWjK9Xi/au0CgYAWWSuQqSqcbq/EM1otHxry\nHxleDAVkGR4HH+BFqCKkaI7P8xbDhGNWaJVzEVvehwaq0W7g5YDZzsKom9tdjzn9\nzTYtMROf9ZH6379w02C7V9g0rjPSSbQt5b9DemAk5KU4XqnBBojXpJheBK9BBBdH\nofE6N4JbWPuFaLaRQHlT6w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@starry-descent-318115.iam.gserviceaccount.com",
+  "client_id": "115429204139657751249",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40starry-descent-318115.iam.gserviceaccount.com"
+}
